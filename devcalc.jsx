@@ -70,7 +70,7 @@ class Devotes extends React.Component {
                     (<DevChkBox
                         key={v2.id}
                         id={v2.id}
-                        text={v2.text? v.2text : this.getChecked('special')?v2.maxText:v2.minText}
+                        text={v2.text? v.2text : this.getChecked('special2')?v2.maxText:v2.minText}
                         onChange={this.onChange.bind(null,v2)}
                         textstyle={this.getChecked(v2.id)?{fontStyle:'normal'}:{fontStyle:'italic'}}
                         />)
