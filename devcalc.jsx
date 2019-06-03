@@ -45,11 +45,11 @@ class Devotes extends React.Component {
         ]
         var values2 = [
             {id:'special',text:"Max Devotions"}
-            {id:'crBlue',minText:"Crossroads Blue - +18 Defensive Ability",maxText:"Crossroads Blue - +18 Defensive Ability"},
-            {id:'crRed',minText:"Crossroads Red - +5% Health",maxText:"Crossroads Red - +5% Health"},
-            {id:'crGreen',minText:"Crossroads Green - +18 Offensive Ability",maxText:"Crossroads Green - +18 Offensive Ability"},
-            {id:'crPurple',minText:"Crossroads Purple - +18 Offensive Ability",maxText:"Crossroads Purple - +18 Offensive Ability"},
-            {id:'crYellow',minText:"Crossroads Yellow - +5% Health",maxText:"Crossroads Yellow - +5% Health"},
+            {id:'cr1',minText:"Crossroads Blue - +18 Defensive Ability",maxText:"Crossroads Blue - +18 Defensive Ability"},
+            {id:'cr2',minText:"Crossroads Red - +5% Health",maxText:"Crossroads Red - +5% Health"},
+            {id:'cr3',minText:"Crossroads Green - +18 Offensive Ability",maxText:"Crossroads Green - +18 Offensive Ability"},
+            {id:'cr4',minText:"Crossroads Purple - +18 Offensive Ability",maxText:"Crossroads Purple - +18 Offensive Ability"},
+            {id:'cr5',minText:"Crossroads Yellow - +5% Health",maxText:"Crossroads Yellow - +5% Health"},
         ]
 
         return (<div>Hello
