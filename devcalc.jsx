@@ -55,7 +55,7 @@ class Devotes extends React.Component {
                         />)
                     )
                 }
-                
+
                 </div>)
     }
 }
