@@ -63,7 +63,9 @@ class Devotes extends React.Component {
                         />)
                     )
                 }
-                Oh Hai
+                
+                </div>)
+        return (Oh Hai
                 { values2.map( v2 =>
                     (<DevChkBox
                         key={v2.id}
@@ -74,7 +76,6 @@ class Devotes extends React.Component {
                         />)
                     )
                 }
-                </div>)
     }
 }
 
