@@ -45,15 +45,15 @@ class Devotes extends React.Component {
         ]
 
         var values2 = [
-            {id:'special',text:"Max Devotions"},
-            {id:'crBlue',minText:"Crossroads Blue - +18 Defensive Ability",maxText:"Crossroads Blue - +24 Defensive Ability"},
-            {id:'crRed',minText:"Crossroads Red - +5% Health",maxText:"Crossroads Red - +8% Health"},
-            {id:'crGreen',minText:"Crossroads Green - +18 Offensive Ability",maxText:"Crossroads Green - +18 Offensive Ability"},
-            {id:'crPurple',minText:"Crossroads Purple - +18 Offensive Ability",maxText:"Crossroads Purple - +18 Offensive Ability"},
-            {id:'crYellow',minText:"Crossroads Yellow - +5% Health",maxText:"Crossroads Yellow - +5% Health"}
+            {id:'anv1',minText:"+15 Defensive Ability",maxText:"+15 Defensive Ability"},
+            {id:'anv2',minText:"+10 Physique",maxText:"+10 Physique"},
+            {id:'anv3',minText:"Increases Armor Absorption by 3%",maxText:"Increases Armor Absorption by 3%"},
+            {id:'anv4',minText:"+15 Defensive Ability, +20% Constitution",maxText:"+15 Defensive Ability, +20% Constitution"},
+            {id:'anv5',minText:"Targo's Hammer - 0.1 Second skill Recharge, 100% Chance to pass through Enemies, 0.3 Meter Radius, 15% Weapon Damage, 28 Physical Damage, +50% Internal Trauma Damage, 10% Chance of Stun target for 1 Second"}
         ]
 
-        return (<div>Hello
+        return (<div><H1>Grim Dawn Calculator</H1><br>
+        		<H2>Crossroads</H2>
                 { values.map( v =>
                     (<DevChkBox
                         key={v.id}
@@ -64,7 +64,7 @@ class Devotes extends React.Component {
                         />)
                     )
                 }
-                <b>Test</b>
+                <H2>Anvil</H2>
                 { values2.map( v2 =>
                     (<DevChkBox
                         key={v2.id}
@@ -76,7 +76,18 @@ class Devotes extends React.Component {
                     )
                 }
                 </div>)
-        
+        		<H2>Empty Throne</H2>
+                { values3.map( v3 =>
+                    (<DevChkBox
+                        key={v3.id}
+                        id={v3.id}
+                        text={v3.text? v3.text : this.getChecked('special')?v3.maxText:v3.minText}
+                        onChange={this.onChange.bind(null,v3)}
+                        textstyle={this.getChecked(v3.id)?{fontStyle:'normal'}:{fontStyle:'italic'}}
+                        />)
+                    )
+                }
+                </div>)
     }
 }
 
