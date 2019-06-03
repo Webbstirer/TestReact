@@ -83,8 +83,7 @@ class Devotes extends React.Component {
                         />)
                     )
                 }
-                </div>)
-        		<H2>Empty Throne</H2>
+                <H2>Empty Throne</H2>
                 { values3.map( v3 =>
                     (<DevChkBox
                         key={v3.id}
@@ -95,6 +94,7 @@ class Devotes extends React.Component {
                         />)
                     )
                 }
+        		
                 </div>)
     }
 }
