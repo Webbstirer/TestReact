@@ -43,14 +43,6 @@ class Devotes extends React.Component {
             {id:'crPurple',minText:"Crossroads Purple - +18 Offensive Ability",maxText:"Crossroads Purple - +18 Offensive Ability"},
             {id:'crYellow',minText:"Crossroads Yellow - +5% Health",maxText:"Crossroads Yellow - +5% Health"},
         ]
-        var values2 = [
-            {id:'special2',text:"Max Devotions"}
-            {id:'cr1',minText:"Crossroads Blue - +18 Defensive Ability",maxText:"Crossroads Blue - +18 Defensive Ability"},
-            {id:'cr2',minText:"Crossroads Red - +5% Health",maxText:"Crossroads Red - +5% Health"},
-            {id:'cr3',minText:"Crossroads Green - +18 Offensive Ability",maxText:"Crossroads Green - +18 Offensive Ability"},
-            {id:'cr4',minText:"Crossroads Purple - +18 Offensive Ability",maxText:"Crossroads Purple - +18 Offensive Ability"},
-            {id:'cr5',minText:"Crossroads Yellow - +5% Health",maxText:"Crossroads Yellow - +5% Health"},
-        ]
 
         return (<div>Hello
                 { values.map( v =>
@@ -65,18 +57,6 @@ class Devotes extends React.Component {
                 }
                 
                 </div>)
-        return (<div>Oh Hai
-                { values2.map( v2 =>
-                    (<DevChkBox
-                        key={v2.id}
-                        id={v2.id}
-                        text={v2.text? v.2text : this.getChecked('special2')?v2.maxText:v2.minText}
-                        onChange={this.onChange.bind(null,v2)}
-                        textstyle={this.getChecked(v2.id)?{fontStyle:'normal'}:{fontStyle:'italic'}}
-                        />)
-                    )
-                }
-                </div>
     }
 }
 
