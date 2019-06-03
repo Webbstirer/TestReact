@@ -36,12 +36,21 @@ class Devotes extends React.Component {
     }
     render(){
         var values = [
-            {id:'special',text:"Max Devotions"}
+            {id:'special',text:"Max Devotions"},
             {id:'crBlue',minText:"Crossroads Blue - +18 Defensive Ability",maxText:"Crossroads Blue - +18 Defensive Ability"},
             {id:'crRed',minText:"Crossroads Red - +5% Health",maxText:"Crossroads Red - +5% Health"},
             {id:'crGreen',minText:"Crossroads Green - +18 Offensive Ability",maxText:"Crossroads Green - +18 Offensive Ability"},
             {id:'crPurple',minText:"Crossroads Purple - +18 Offensive Ability",maxText:"Crossroads Purple - +18 Offensive Ability"},
-            {id:'crYellow',minText:"Crossroads Yellow - +5% Health",maxText:"Crossroads Yellow - +5% Health"},
+            {id:'crYellow',minText:"Crossroads Yellow - +5% Health",maxText:"Crossroads Yellow - +5% Health"}
+        ]
+
+        var values2 = [
+            {id:'special',text:"Max Devotions"},
+            {id:'crBlue',minText:"Crossroads Blue - +18 Defensive Ability",maxText:"Crossroads Blue - +24 Defensive Ability"},
+            {id:'crRed',minText:"Crossroads Red - +5% Health",maxText:"Crossroads Red - +8% Health"},
+            {id:'crGreen',minText:"Crossroads Green - +18 Offensive Ability",maxText:"Crossroads Green - +18 Offensive Ability"},
+            {id:'crPurple',minText:"Crossroads Purple - +18 Offensive Ability",maxText:"Crossroads Purple - +18 Offensive Ability"},
+            {id:'crYellow',minText:"Crossroads Yellow - +5% Health",maxText:"Crossroads Yellow - +5% Health"}
         ]
 
         return (<div>Hello
@@ -55,8 +64,19 @@ class Devotes extends React.Component {
                         />)
                     )
                 }
-
+                <b>Test</b>
+                { values2.map( v2 =>
+                    (<DevChkBox
+                        key={v2.id}
+                        id={v2.id}
+                        text={v2.text? v2.text : this.getChecked('special')?v2.maxText:v2.minText}
+                        onChange={this.onChange.bind(null,v2)}
+                        textstyle={this.getChecked(v2.id)?{fontStyle:'normal'}:{fontStyle:'italic'}}
+                        />)
+                    )
+                }
                 </div>)
+        
     }
 }
 
