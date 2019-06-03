@@ -52,6 +52,14 @@ class Devotes extends React.Component {
             {id:'anv5',minText:"Targo's Hammer - 0.1 Second skill Recharge, 100% Chance to pass through Enemies, 0.3 Meter Radius, 15% Weapon Damage, 28 Physical Damage, +50% Internal Trauma Damage, 10% Chance of Stun target for 1 Second"}
         ]
 
+        var values3 = [
+            {id:'anv1',minText:"+15 Defensive Ability",maxText:"+15 Defensive Ability"},
+            {id:'anv2',minText:"+10 Physique",maxText:"+10 Physique"},
+            {id:'anv3',minText:"Increases Armor Absorption by 3%",maxText:"Increases Armor Absorption by 3%"},
+            {id:'anv4',minText:"+15 Defensive Ability, +20% Constitution",maxText:"+15 Defensive Ability, +20% Constitution"},
+            {id:'anv5',minText:"Targo's Hammer - 0.1 Second skill Recharge, 100% Chance to pass through Enemies, 0.3 Meter Radius, 15% Weapon Damage, 28 Physical Damage, +50% Internal Trauma Damage, 10% Chance of Stun target for 1 Second"}
+        ]
+
         return (<div><H1>Grim Dawn Calculator</H1><br>
         		<H2>Crossroads</H2>
                 { values.map( v =>
