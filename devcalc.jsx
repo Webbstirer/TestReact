@@ -60,8 +60,7 @@ class Devotes extends React.Component {
             {id:'anv5',minText:"Targo's Hammer - 0.1 Second skill Recharge, 100% Chance to pass through Enemies, 0.3 Meter Radius, 15% Weapon Damage, 28 Physical Damage, +50% Internal Trauma Damage, 10% Chance of Stun target for 1 Second"}
         ]
 
-        return (<div><H1>Grim Dawn Calculator</H1><br>
-        		<H2>Crossroads</H2>
+        return (<div><H1>Grim Dawn Calculator</H1>
                 { values.map( v =>
                     (<DevChkBox
                         key={v.id}
