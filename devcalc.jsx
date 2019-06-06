@@ -72,13 +72,13 @@ var tiers = // : Tier[] =
                         ]
                 },
                 {
-                    title: 'Harpy',
+                    title: 'Night Talon',
                     values:
                         [
-                            { id: 'harp1', minText: "+8 Cunning, Bonus to All Pets: +15% to All Damage", maxText: "+8 Cunning, Bonus to All Pets: +15% to All Damage" },
-                            { id: 'harp2', minText: "10% Elemental Resistance, Bonus to All Pets: 10% Elemental Resistance", maxText: "10% Elemental Resistance, Bonus to All Pets: 10% Elemental Resistance" },
-                            { id: 'harp3', minText: "33 Bleeding Damage over 3 seconds, Bonus to All Pets: 12 Bleeding Damage over 3 seconds, +25% to All Damage", maxText: "33 Bleeding Damage over 3 seconds, Bonus to All Pets: 12 Bleeding Damage over 3 seconds, +25% to All Damage" },
-                            { id: 'harp4', minText: "+35% Bleeding Damage, Bonus to All Pets: 24 Bleeding Damage over 3 seconds, +60% Bleeding Damage, +5% Attack Speed", maxText: "+35% Bleeding Damage, Bonus to All Pets: 24 Bleeding Damage over 3 seconds, +60% Bleeding Damage, +5% Attack Speed" }
+                            { id: 'nightt1', minText: "+8 Cunning, Bonus to All Pets: +15% to All Damage", maxText: "+8 Cunning, Bonus to All Pets: +15% to All Damage" },
+                            { id: 'nightt2', minText: "10% Elemental Resistance, Bonus to All Pets: 10% Elemental Resistance", maxText: "10% Elemental Resistance, Bonus to All Pets: 10% Elemental Resistance" },
+                            { id: 'nightt3', minText: "33 Bleeding Damage over 3 seconds, Bonus to All Pets: 12 Bleeding Damage over 3 seconds, +25% to All Damage", maxText: "33 Bleeding Damage over 3 seconds, Bonus to All Pets: 12 Bleeding Damage over 3 seconds, +25% to All Damage" },
+                            { id: 'nightt4', minText: "+35% Bleeding Damage, Bonus to All Pets: 24 Bleeding Damage over 3 seconds, +60% Bleeding Damage, +5% Attack Speed", maxText: "+35% Bleeding Damage, Bonus to All Pets: 24 Bleeding Damage over 3 seconds, +60% Bleeding Damage, +5% Attack Speed" }
                         ]
                 }
         
