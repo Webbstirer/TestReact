@@ -40,6 +40,50 @@ var tiers = // : Tier[] =
                             { id: 'et3', minText: "8% Chaos Resistance, Bonus to All Pets: 8% Chaos Resistance", maxText: "8% Chaos Resistance, Bonus to All Pets: 8% Chaos Resistance" },
                             { id: 'et4', minText: "8% Aether Resistance, Bonus to All Pets: 8% Aether Resistance", maxText: "8% Aether Resistance, Bonus to All Pets: 8% Aether Resistance" },
                         ]
+                },
+                {
+                    title: 'Falcon',
+                    values:
+                        [
+                            { id: 'falc1', minText: "+15% Physical Damage", maxText: "+15% Physical Damage" },
+                            { id: 'falc2', minText: "+24% Bleeding Damage", maxText: "+24% Bleeding Damage" },
+                            { id: 'falc3', minText: "+15 Cunning", maxText: "+15 Cunning" },
+                            { id: 'falc4', minText: "+24% Physical Damage", maxText: "+24% Physical Damage" },
+                            { id: 'falc5', minText: "Falcon Swoop - 2 Second Skill Recharge, 3 Projectile(s), 100% Chance to pass through Enemies, 0.1 Meter Radius, 6% Weapon Damage, 28 Physical Damage 150 Bleeding Damage over 3 Seconds", maxText: "Falcon Swoop(20/20) - 2 Second Skill Recharge, 6 Projectile(s), 100% Chance to pass through Enemies, 0.1 Meter Radius, 20% Weapon Damage, 98 Physical Damage 405 Bleeding Damage over 3 Seconds" }
+                        ]
+                },
+                {
+                    title: 'Hammer',
+                    values:
+                        [
+                            { id: 'hamr1', minText: "+15% Physical Damage", maxText: "+15% Physical Damage" },
+                            { id: 'hamr2', minText: "+30% Internal Trauma Damage, +8 Defensive Ability", maxText: "+30% Internal Trauma Damage, +8 Defensive Ability" },
+                            { id: 'hamr3', minText: "+15% Physical Damage, +30% Internal Trauma Damage", maxText: "+15% Physical Damage, +30% Internal Trauma Damage" }
+                        ]
+                },
+                {
+                    title: 'Harpy',
+                    values:
+                        [
+                            { id: 'harp1', minText: "+15% Pierce Damage, +15% Cold Damage", maxText: "+15% Pierce Damage, +15% Cold Damage" },
+                            { id: 'harp2', minText: "+10 Cunning, +1.5 Energy regenerated per Second", maxText: "+10 Cunning, +1.5 Energy regenerated per Second" },
+                            { id: 'harp3', minText: "5-10 Piercing Damage, +24% Pierce Damage, +24% Cold Damage", maxText: "5-10 Piercing Damage, +24% Pierce Damage, +24% Cold Damage" },
+                            { id: 'harp4', minText: "+15 Offensive Ability, 10% Bleeding Resistance", maxText: "+15 Offensive Ability, 10% Bleeding Resistance" }
+                        ]
+                },
+                {
+                    title: 'Harpy',
+                    values:
+                        [
+                            { id: 'harp1', minText: "+8 Cunning, Bonus to All Pets: +15% to All Damage", maxText: "+8 Cunning, Bonus to All Pets: +15% to All Damage" },
+                            { id: 'harp2', minText: "10% Elemental Resistance, Bonus to All Pets: 10% Elemental Resistance", maxText: "10% Elemental Resistance, Bonus to All Pets: 10% Elemental Resistance" },
+                            { id: 'harp3', minText: "33 Bleeding Damage over 3 seconds, Bonus to All Pets: 12 Bleeding Damage over 3 seconds, +25% to All Damage", maxText: "33 Bleeding Damage over 3 seconds, Bonus to All Pets: 12 Bleeding Damage over 3 seconds, +25% to All Damage" },
+                            { id: 'harp4', minText: "+35% Bleeding Damage, Bonus to All Pets: 24 Bleeding Damage over 3 seconds, +60% Bleeding Damage, +5% Attack Speed", maxText: "+35% Bleeding Damage, Bonus to All Pets: 24 Bleeding Damage over 3 seconds, +60% Bleeding Damage, +5% Attack Speed" }
+                        ]
+                }
+        
+            
+        
                 }
             ]
         }
@@ -154,33 +198,7 @@ class Devotes extends React.Component {
 
         checked.map(d =>keys.map(k => incrementer(d,k)));
 
-        var values4 = [
-            { id: 'falc1', minText: "+15% Physical Damage", maxText: "+15% Physical Damage" },
-            { id: 'falc2', minText: "+24% Bleeding Damage", maxText: "+24% Bleeding Damage" },
-            { id: 'falc3', minText: "+15 Cunning", maxText: "+15 Cunning" },
-            { id: 'falc4', minText: "+24% Physical Damage", maxText: "+24% Physical Damage" },
-            { id: 'falc5', minText: "Falcon Swoop - 2 Second Skill Recharge, 3 Projectile(s), 100% Chance to pass through Enemies, 0.1 Meter Radius, 6% Weapon Damage, 28 Physical Damage 150 Bleeding Damage over 3 Seconds", maxText: "Falcon Swoop(20/20) - 2 Second Skill Recharge, 6 Projectile(s), 100% Chance to pass through Enemies, 0.1 Meter Radius, 20% Weapon Damage, 98 Physical Damage 405 Bleeding Damage over 3 Seconds" }
-        ]
-
-        var values5 = [
-            { id: 'hamr1', minText: "+15% Physical Damage", maxText: "+15% Physical Damage" },
-            { id: 'hamr2', minText: "+30% Internal Trauma Damage, +8 Defensive Ability", maxText: "+30% Internal Trauma Damage, +8 Defensive Ability" },
-            { id: 'hamr3', minText: "+15% Physical Damage, +30% Internal Trauma Damage", maxText: "+15% Physical Damage, +30% Internal Trauma Damage" }
-        ]
-
-        var values6 = [
-            { id: 'harp1', minText: "+15% Pierce Damage, +15% Cold Damage", maxText: "+15% Pierce Damage, +15% Cold Damage" },
-            { id: 'harp2', minText: "+10 Cunning, +1.5 Energy regenerated per Second", maxText: "+10 Cunning, +1.5 Energy regenerated per Second" },
-            { id: 'harp3', minText: "5-10 Piercing Damage, +24% Pierce Damage, +24% Cold Damage", maxText: "5-10 Piercing Damage, +24% Pierce Damage, +24% Cold Damage" },
-            { id: 'harp4', minText: "+15 Offensive Ability, 10% Bleeding Resistance", maxText: "+15 Offensive Ability, 10% Bleeding Resistance" }
-        ]
-
-        var values7 = [
-            { id: 'harp1', minText: "+8 Cunning, Bonus to All Pets: +15% to All Damage", maxText: "+8 Cunning, Bonus to All Pets: +15% to All Damage" },
-            { id: 'harp2', minText: "10% Elemental Resistance, Bonus to All Pets: 10% Elemental Resistance", maxText: "10% Elemental Resistance, Bonus to All Pets: 10% Elemental Resistance" },
-            { id: 'harp3', minText: "33 Bleeding Damage over 3 seconds, Bonus to All Pets: 12 Bleeding Damage over 3 seconds, +25% to All Damage", maxText: "33 Bleeding Damage over 3 seconds, Bonus to All Pets: 12 Bleeding Damage over 3 seconds, +25% to All Damage" },
-            { id: 'harp4', minText: "+35% Bleeding Damage, Bonus to All Pets: 24 Bleeding Damage over 3 seconds, +60% Bleeding Damage, +5% Attack Speed", maxText: "+35% Bleeding Damage, Bonus to All Pets: 24 Bleeding Damage over 3 seconds, +60% Bleeding Damage, +5% Attack Speed" }
-        ]
+        
 
         return (<div>
         <header className="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar navbar-fixed-top">
