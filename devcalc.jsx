@@ -217,54 +217,7 @@ class Devotes extends React.Component {
                     </div>
                 )
             }
-            <b>Falcon</b>
-            {values4.map(v4 =>
-                (<DevChkBox
-                    key={v4.id}
-                    id={v4.id}
-                    text={v4.text ? v4.text : this.getChecked('special') ? v4.maxText : v4.minText}
-                    onChange={this.onChange.bind(null, v4)}
-                    textstyle={this.getChecked(v4.id) ? { fontStyle: 'normal' } : { fontStyle: 'italic' }}
-                />)
-            )
-            }
-            <b>Hammer</b>
-            {values5.map(v5 =>
-                (<DevChkBox
-                    key={v5.id}
-                    id={v5.id}
-                    text={v5.text ? v5.text : this.getChecked('special') ? v5.maxText : v5.minText}
-                    onChange={this.onChange.bind(null, v5)}
-                    textstyle={this.getChecked(v5.id) ? { fontStyle: 'normal' } : { fontStyle: 'italic' }}
-                />)
-            )
-            }
-            <b>Harpy</b>
-            {values6.map(v6 =>
-                (<DevChkBox
-                    key={v6.id}
-                    id={v6.id}
-                    text={v6.text ? v6.text : this.getChecked('special') ? v6.maxText : v6.minText}
-                    onChange={this.onChange.bind(null, v6)}
-                    textstyle={this.getChecked(v6.id) ? { fontStyle: 'normal' } : { fontStyle: 'italic' }}
-                />)
-            )
-            }
-            <b>Nighttalon</b>
-            {values7.map(v7 =>
-                (<DevChkBox
-                    key={v7.id}
-                    id={v7.id}
-                    text={v7.text ? v7.text : this.getChecked('special') ? v7.maxText : v7.minText}
-                    onChange={this.onChange.bind(null, v7)}
-                    textstyle={this.getChecked(v7.id) ? { fontStyle: 'normal' } : { fontStyle: 'italic' }}
-                />)
-            )
-            }
-            <b>Bonuses</b>
-            {
-
-            }
+            
         </div>
         </div>)
     }
